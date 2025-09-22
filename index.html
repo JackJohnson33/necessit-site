@@ -192,7 +192,9 @@
       <p class="mt-2 text-slate-300">Have a question or a project? Send us a message below.</p>
 
       <!-- Netlify Form -->
-     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" 
+      action="/success.html"
+      onsubmit="gtag('event','contact_submit',{event_category:'engagement',event_label:'Contact Form'});">
   <input type="hidden" name="form-name" value="contact">
 
   <p style="display:none;">
@@ -216,6 +218,7 @@
 
   <button type="submit">Send Message</button>
 </form>
+
 
     </div>
   </section>
